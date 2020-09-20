@@ -1,0 +1,13 @@
+.navbar > mat-toolbar {
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0);
+  width: 100vw;
+}
+
+.navbar > mat-toolbar > div > span {
+  color: white;
+}
+
+span {
+  padding-right: 1rem;
+}

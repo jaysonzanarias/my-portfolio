@@ -1,0 +1,35 @@
+.home-image {
+  background-image: url("src/assets/images/image_2.jpg");
+  height: 100%;
+
+  opacity: 0.2;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-title-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 35%;
+  color: white;
+  margin: 60px;
+}
+
+.home-title {
+  font-size: 6rem;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  padding-left: 15px;
+}
+
+.home-social-media {
+  padding-left: 15px;
+}
+
+.home-social-media > i {
+  margin-right: 20px;
+}
