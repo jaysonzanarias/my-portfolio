@@ -33,3 +33,9 @@
 .home-social-media > i {
   margin-right: 20px;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 20px;
+}

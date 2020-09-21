@@ -12,6 +12,12 @@ import { ProjectListComponent } from './content/portfolio/project-list/project-l
 import { ProjectContainerComponent } from './content/portfolio/project-container/project-container.component';
 import { PortfolioComponent } from './content/portfolio/portfolio.component';
 import { HomeComponent } from './content/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SkillsComponent } from './content/skills/skills.component';
+import { TutorialsComponent } from './content/tutorials/tutorials.component';
+import { VlogComponent } from './content/vlog/vlog.component';
+import { ContactComponent } from './content/contact/contact.component';
+import { LiveProjectsComponent } from './content/live-projects/live-projects.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +27,19 @@ import { HomeComponent } from './content/home/home.component';
     ProjectListComponent,
     ProjectContainerComponent,
     PortfolioComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent,
+    TutorialsComponent,
+    VlogComponent,
+    ContactComponent,
+    LiveProjectsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
