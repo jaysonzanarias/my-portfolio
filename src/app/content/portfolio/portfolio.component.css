@@ -4,40 +4,51 @@
   background: rgb(28, 44, 78);
 }
 
-.portfolio-header {
-  background-image: url("src/assets/images/pexels-sevenstorm-juhaszimrus-443383.jpg");
+.portfolio-header-image {
   height: 45%;
 
   opacity: 0.2;
 
+  background-image: url("src/assets/images/pexels-sevenstorm-juhaszimrus-443383.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.portfolio-intro {
+.portfolio-header-container {
   font: 400 20px "Open Sans", sans-serif;
   line-height: 1.5;
   color: white;
 
   position: absolute;
-  top: 15%;
+  top: 12%;
   margin-left: 25%;
   margin-right: 25%;
+  animation: revealText 2s ease-in-out;
+}
+
+@keyframes revealText {
+  0% {
+    top: 2%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 12%;
+  }
 }
 
 .portfolio-title {
   font-size: 3rem;
   margin-bottom: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
 }
 
 .portfolio-category {
-  height: 510px;
+  height: 55%;
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 
@@ -58,6 +69,17 @@
   background-color: rgb(0, 0, 0);
 
   overflow: hidden;
+
+  animation: revealCategoryItem 1.5s ease-in-out;
+}
+
+@keyframes revealCategoryItem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .portfolio-category-item-text {
@@ -113,4 +135,35 @@
 
 .portfolio-category-item-mobile {
   background-image: url("src/assets/images/daniel-romero-aiUAxBNe3Xk-unsplash.jpg");
+}
+
+.portfolio-item-details-container {
+  height: 100%;
+  width: 100%;
+}
+
+.project-title {
+  width: 100%;
+  height: 300px;
+  background: black;
+}
+
+.project-details {
+  display: flex;
+}
+
+.project-list {
+  width: 20%;
+  background: rgb(28, 44, 78);
+  color: white;
+}
+
+.project-container {
+  width: 60%;
+  background: rgb(255, 255, 255);
+}
+
+.project-details-outline {
+  width: 20%;
+  background: rgb(236, 236, 236);
 }

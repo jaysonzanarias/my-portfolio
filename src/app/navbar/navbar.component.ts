@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,4 +12,16 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @HostListener('window:scroll', ['$event'])
+  addNavbarColorEffects() {
+    const nav = document.querySelector('#mat-toolbar');
+
+    if (window.scrollY <= 10) {
+      nav.classList.remove("scroll");
+      nav.classList.add('noscroll')
+    } else {
+      nav.classList.remove("noscroll");
+      nav.classList.add('scroll')
+    }
+  }
 }
