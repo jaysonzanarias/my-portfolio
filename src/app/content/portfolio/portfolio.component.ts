@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
   category = "";
+  selectedProject;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setSelected(project) {
+    console.log("PortfolioComponent - setSelected: ", project);
+    this.selectedProject = project;
   }
 
   scroll(el: HTMLElement) {

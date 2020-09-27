@@ -10,11 +10,13 @@
 }
 
 .scroll {
-  background: rgba(255, 255, 255, 1);
+  /* background: rgba(255, 255, 255, 1); */
+  background: rgba(0, 0, 0, 1);
 }
 
 .scroll span a {
-  color: rgb(85, 85, 85);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(255, 255, 255);
 }
 
 span {

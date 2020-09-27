@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'project-container',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-container.component.css']
 })
 export class ProjectContainerComponent implements OnInit {
+  @Input() selectedProject;
+
+  imagePath: string = "assets/images/project_images/";
 
   constructor() { }
 

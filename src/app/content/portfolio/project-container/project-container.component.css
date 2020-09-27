@@ -1,0 +1,15 @@
+.image-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-screenshot {
+    max-width: 900px;
+    max-height: 900px;
+
+    /* max-width: 700px;
+    max-height: 700px; */
+
+    margin: 20px;
+    border: solid black 2px;
+}

@@ -1,13 +1,12 @@
-<p>project-container works!</p>
+<h1>{{selectedProject?.name}}</h1>
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<p *ngIf="selectedProject?.type">
+    <i>Tag: {{selectedProject?.type }}</i>
+</p>
 
-<p>END</p>
+<p>{{selectedProject?.details}}</p>
+
+<div class="image-container">
+    <!-- TODO: use Angular Material's Card :D -->
+    <img *ngFor="let image of selectedProject?.images" [src]="imagePath + image" class="project-screenshot"/>
+</div>

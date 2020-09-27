@@ -12,42 +12,79 @@
 
     <!-- height: 55%; -->
     <div class="portfolio-category">
-        <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Web');">
-            <div class="portfolio-category-item-web portfolio-category-item-overlay ">
+        <div class="portfolio-category-container">
+            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('All');">
+                <div class="portfolio-category-item-all portfolio-category-item-overlay ">
+                </div>
+                <div class="portfolio-category-item-text">
+                    All
+                </div>
             </div>
-            <div class="portfolio-category-item-text">
-                Web
+            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Web');">
+                <div class="portfolio-category-item-web portfolio-category-item-overlay ">
+                </div>
+                <div class="portfolio-category-item-text">
+                    Web
+                </div>
             </div>
-        </div>
-        <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Backend');">
-            <div class="portfolio-category-item-backend portfolio-category-item-overlay ">
+            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Backend');">
+                <div class="portfolio-category-item-backend portfolio-category-item-overlay ">
+                </div>
+                <div class="portfolio-category-item-text">
+                    Backend
+                </div>
             </div>
-            <div class="portfolio-category-item-text">
-                Backend
+            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Desktop');">
+                <div class="portfolio-category-item-desktop portfolio-category-item-overlay ">
+                </div>
+                <div class="portfolio-category-item-text">
+                    Desktop
+                </div>
             </div>
-        </div>
-        <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Desktop');">
-            <div class="portfolio-category-item-desktop portfolio-category-item-overlay ">
+            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Mobile');">
+                <div class="portfolio-category-item-mobile portfolio-category-item-overlay ">
+                </div>
+                <div class="portfolio-category-item-text">
+                    Mobile
+                </div>
             </div>
-            <div class="portfolio-category-item-text">
-                Desktop
-            </div>
-        </div>
-        <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Mobile');">
-            <div class="portfolio-category-item-mobile portfolio-category-item-overlay ">
-            </div>
-            <div class="portfolio-category-item-text">
-                Mobile
+            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Game');">
+                <div class="portfolio-category-item-games portfolio-category-item-overlay ">
+                </div>
+                <div class="portfolio-category-item-text">
+                    Games
+                </div>
             </div>
         </div>
     </div>
 
     <div #portDetailsContainer class="portfolio-item-details-container">
-        <div class="project-title">{{ category | uppercase }}</div>
+        <div class="project-title">{{ category }} Projects</div>
         <div class="project-details">
-            <project-list class="project-list"></project-list>
-            <project-container class="project-container"></project-container>
-            <project-list class="project-details-outline"></project-list>
+            <project-list class="project-list" (selected)="setSelected($event)" [(category)]="category"></project-list>
+            <project-container class="project-container" [selectedProject]="selectedProject"></project-container>
+            <div class="project-details-outline">
+                <div *ngIf="selectedProject">
+                    <h1>Technologies Used</h1>
+                    <p>{{selectedProject?.technologies}}</p>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div style="background: rgb(44, 44, 44); height: 200px;">
+        <p style="color: rgb(114, 114, 114);
+        padding-left: 130px;
+        padding-right: 130px;
+        padding-top: 25px;
+        line-height: 50px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sit officiis dolore ipsum repellendus
+            placeat repudiandae neque impedit at illo mollitia ullam, nobis natus qui sapiente cum delectus cupiditate
+            possimus, assumenda eius rem earum tempore eligendi voluptates! Deserunt illum inventore possimus eaque!
+            elit. Laudantium sit officiis dolore ipsum repellendus
+            placeat repudiandae neque impedit at illo mollitia ullam, nobis natus qui sapiente cum delectus cupiditate
+            possimus, assumenda eius rem earum tempore eligendi voluptates! Deserunt illum inventore possimus eaque!
+            Corporis cupiditate asperiores debitis nobis odio? Tempore, accusamus.
+        </p>
     </div>
 </div>

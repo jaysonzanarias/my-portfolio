@@ -1,0 +1,5 @@
+.clickable-look {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}

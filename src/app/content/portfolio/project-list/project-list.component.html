@@ -1,8 +1,7 @@
-<h1>project-list works!</h1>
+<h1>Project List</h1>
 
 <ul>
-    <li>Project 1</li>
-    <li>Project 2</li>
-    <li>Project 3</li>
-    <li>Project 4</li>
+    <li *ngFor="let project of projects" (click)="setSelectedProject(project)" class="clickable-look">
+       {{project.name}}
+    </li>
 </ul>
