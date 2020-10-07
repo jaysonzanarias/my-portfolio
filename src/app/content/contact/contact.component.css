@@ -1,4 +1,26 @@
 .contact-container {
   height: 100%;
-  background: rgb(107, 34, 114);
+  width: 100%;
+  /* background: rgb(28, 44, 78); */
+}
+
+.contact-header-image {
+  opacity: 0.2;
+
+  background-image: url("src/assets/images/image_1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 100%;
+}
+
+.contact-me-details {
+  position: absolute;
+  top: 25%;
+  margin-left: 15%;
+  /* margin-right: 15%; */
+  height: 50%;
+  width: 70%;
 }

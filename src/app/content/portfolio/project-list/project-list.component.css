@@ -1,5 +1,19 @@
 .clickable-look {
-    cursor: pointer;
-    text-decoration: underline;
-    color: blue;
+  cursor: pointer;
+  color: #0645ad;
+  list-style-type: none;
+  transition: 0.3s ease-in-out;
+}
+
+.clickable-look:hover {
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease-in-out;
+}
+
+.active {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  transition: 0.5s ease-in-out;
 }

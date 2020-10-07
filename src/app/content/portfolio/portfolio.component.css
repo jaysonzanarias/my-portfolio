@@ -4,11 +4,7 @@
   background: rgb(28, 44, 78);
 }
 
-.portfolio-header-image {
-  height: 45%;
-
-  opacity: 0.2;
-
+.portfolio-header {
   background-image: url("src/assets/images/pexels-sevenstorm-juhaszimrus-443383.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -16,15 +12,19 @@
   background-repeat: no-repeat;
 }
 
-.portfolio-header-container {
+.portfolio-header-image {
+  background: rgba(28, 44, 78, 0.8);
+}
+
+.portfolio-header-content {
   font: 400 20px "Open Sans", sans-serif;
   line-height: 1.5;
   color: white;
 
-  position: absolute;
-  top: 12%;
+  padding-top: 5%;
   margin-left: 25%;
   margin-right: 25%;
+  padding-bottom: 30px;
   animation: revealText 2s ease-in-out;
 }
 
@@ -46,7 +46,6 @@
 }
 
 .portfolio-category {
-  /* height: 55%; */
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -64,12 +63,9 @@
   align-items: center;
   justify-content: center;
   width: 80%;
-  /* background: red; */
 }
 
 .portfolio-category-item {
-  /* display: inline-block; */
-
   height: 300px;
   width: 300px;
 
@@ -158,16 +154,13 @@
 }
 
 .portfolio-category-item-games {
-  background-image: url("src/assets/images/image_07.jpg");
+  background-image: url("src/assets/images/pexels-pixabay-256417.jpg");
 }
 
 .portfolio-item-details-container {
   min-height: 100vh;
   width: 100%;
-  /* background: white;   */
-  /* background: rgb(0, 0, 0); */
 
-  /* background-image: url("src/assets/images/pexels-sevenstorm-juhaszimrus-432185.jpg"); */
   background-image: url("src/assets/images/pexels-sevenstorm-juhaszimrus-443383.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -178,10 +171,7 @@
 .project-title {
   height: 300px;
 
-  /* same color with header */
   background: rgba(28, 44, 78, 0.8);
-  /* background: rgba(0, 0, 0, 0.7); */
-
   color: rgb(255, 255, 255);
   font-size: 60px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -199,12 +189,7 @@
 
 .project-list {
   width: 20%;
-  /* background: rgb(236, 236, 236); */
   background-color: #f0f0f0;
-  /* background: rgb(28, 44, 78); */
-  /* background: rgb(53, 57, 68); */
-  /* color: rgb(255, 255, 255); */
-  /* color: rgb(175, 175, 175); */
   color: black;
 
   padding-top: 30px;
@@ -229,7 +214,6 @@
 
 .project-details-outline {
   width: 20%;
-  /* background: rgb(236, 236, 236); */
   background-color: #f0f0f0;
   padding-top: 30px;
   padding-left: 20px;
@@ -237,4 +221,14 @@
 
   font-size: 16px;
   line-height: 28px;
+}
+
+.footer {
+  background: rgb(44, 44, 44);
+  height: auto;
+  color: rgb(114, 114, 114);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 25px;
+  text-align: center;
 }

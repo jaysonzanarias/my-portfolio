@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -39,6 +41,8 @@ import { LiveProjectsComponent } from './content/live-projects/live-projects.com
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
+    MatCardModule,
+    MatInputModule,
     AppRoutingModule
   ],
   providers: [],

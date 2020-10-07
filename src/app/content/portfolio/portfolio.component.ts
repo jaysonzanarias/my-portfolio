@@ -8,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioComponent implements OnInit {
   category = "";
   selectedProject;
+  copyrightYear: number;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.copyrightYear = new Date().getFullYear();
   }
 
   setSelected(project) {
-    console.log("PortfolioComponent - setSelected: ", project);
     this.selectedProject = project;
   }
 

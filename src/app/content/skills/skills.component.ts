@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+  imagePath: string = "assets/images/tech_icons/";
+
+  image = {
+    image_name: "pexels-jens-mahnke-776092.jpg"
+  }
 
   constructor() { }
 

@@ -1,7 +1,8 @@
 <h1>Project List</h1>
 
-<ul>
-    <li *ngFor="let project of projects" (click)="setSelectedProject(project)" class="clickable-look">
-       {{project.name}}
+<ul style="padding-left: 30px;">
+    <li *ngFor="let project of projects" [ngClass]="{'active': selectedProject == project}"
+        (click)="setSelectedProject(project)" class="clickable-look">
+        {{project.name}}
     </li>
 </ul>

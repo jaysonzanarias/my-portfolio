@@ -14,14 +14,25 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   addNavbarColorEffects() {
-    const nav = document.querySelector('#mat-toolbar');
+    const navClassList = document.querySelector('#mat-toolbar').classList;
+    const goToTopClassList = document.querySelector('#go-to-top').classList;
+    const scrollY = window.scrollY;
 
-    if (window.scrollY <= 10) {
-      nav.classList.remove("scroll");
-      nav.classList.add('noscroll')
+    if (scrollY <= 10) {
+      navClassList.remove("scroll");
+      navClassList.add('noscroll')
     } else {
-      nav.classList.remove("noscroll");
-      nav.classList.add('scroll')
+      navClassList.remove("noscroll");
+      navClassList.add('scroll')
+
+    }
+
+    if (scrollY <= 500) {
+      goToTopClassList.add('no-go-to-top');
+      goToTopClassList.remove('go-to-top');
+    } else {
+      goToTopClassList.remove('no-go-to-top');
+      goToTopClassList.add('go-to-top');
     }
   }
 }

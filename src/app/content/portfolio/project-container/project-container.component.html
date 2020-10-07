@@ -4,9 +4,17 @@
     <i>Tag: {{selectedProject?.type }}</i>
 </p>
 
-<p>{{selectedProject?.details}}</p>
+<mat-form-field class="project-details-textarea">
+    <textarea readonly matInput cdkTextareaAutosize="true" [value]="selectedProject?.details">
+        {{selectedProject?.details}}
+    </textarea>
 
-<div class="image-container">
-    <!-- TODO: use Angular Material's Card :D -->
-    <img *ngFor="let image of selectedProject?.images" [src]="imagePath + image" class="project-screenshot"/>
-</div>
+    <div class="image-container">
+        <div *ngFor="let image of selectedProject?.images">
+            <img [src]="imagePath + image.image_name" class="project-screenshot" />
+            <div>
+                <i>{{image.caption}}</i>
+            </div>
+        </div>
+    </div>
+</mat-form-field>

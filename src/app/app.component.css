@@ -7,3 +7,23 @@
   position: absolute;
   top: 0;
 }
+
+.no-go-to-top {
+  visibility: hidden;
+  display: none;
+}
+
+.go-to-top {
+  visibility: visible;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 30px;
+  color: rgb(187, 187, 187);
+}
+
+.go-to-top:hover {
+  color: green;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}

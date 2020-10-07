@@ -1,16 +1,21 @@
 <div class="portfolio-container">
-    <!-- height: 45%; -->
-    <div class="portfolio-header-image">
+    <!-- height: depends on the length of text -->
+    <div class="portfolio-header">
+        <div class="portfolio-header-image">
+            <div class="portfolio-header-content">
+                <div class="portfolio-title">My Portfolio</div>
+                Hi! Below are some of the projects that I've worked on in the past from fully fledged application to
+                some random pet projects, hackathon entry, POC, etc. Most of them I've created alone from ground-up,
+                other examples are by team where I’m working mostly on critical parts. Unfortunately, some of the really
+                cool projects I've done in the past are NDA protected and I cannot fully share them here; nonetheless,
+                thank you for visiting my site and I still hope you enjoy and get a glimpse of what kind of developer or
+                person I am. Will be happy to hear a random feedback from you or if you simply want to connect feel free
+                to visit the Contact page for more details. Thank you!
+            </div>
+        </div>
     </div>
 
-    <div class="portfolio-header-container">
-        <div class="portfolio-title">My Portfolio</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora sequi, quam repellendus eum nemo cupiditate
-        perspiciatis aspernatur molestiae distinctio! Doloremque repellat, tempore voluptate expedita quisquam aperiam
-        porro velit in vitae laboriosam itaque blanditiis voluptatibus accusamus sequi eius perferendis sunt.
-    </div>
-
-    <!-- height: 55%; -->
+    <!-- height: depends on the dimension of each categories -->
     <div class="portfolio-category">
         <div class="portfolio-category-container">
             <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('All');">
@@ -61,7 +66,7 @@
     <div #portDetailsContainer class="portfolio-item-details-container">
         <div class="project-title">{{ category }} Projects</div>
         <div class="project-details">
-            <project-list class="project-list" (selected)="setSelected($event)" [(category)]="category"></project-list>
+            <project-list class="project-list" (onSelect)="setSelected($event)" [(category)]="category"></project-list>
             <project-container class="project-container" [selectedProject]="selectedProject"></project-container>
             <div class="project-details-outline">
                 <div *ngIf="selectedProject">
@@ -72,19 +77,8 @@
         </div>
     </div>
 
-    <div style="background: rgb(44, 44, 44); height: 200px;">
-        <p style="color: rgb(114, 114, 114);
-        padding-left: 130px;
-        padding-right: 130px;
-        padding-top: 25px;
-        line-height: 50px;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sit officiis dolore ipsum repellendus
-            placeat repudiandae neque impedit at illo mollitia ullam, nobis natus qui sapiente cum delectus cupiditate
-            possimus, assumenda eius rem earum tempore eligendi voluptates! Deserunt illum inventore possimus eaque!
-            elit. Laudantium sit officiis dolore ipsum repellendus
-            placeat repudiandae neque impedit at illo mollitia ullam, nobis natus qui sapiente cum delectus cupiditate
-            possimus, assumenda eius rem earum tempore eligendi voluptates! Deserunt illum inventore possimus eaque!
-            Corporis cupiditate asperiores debitis nobis odio? Tempore, accusamus.
-        </p>
+    <div class="footer">
+        <div>Jayson Zanarias</div>
+        <div>© {{copyrightYear}}. All Rights Reserved.</div>
     </div>
 </div>
