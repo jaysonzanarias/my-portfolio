@@ -1,4 +1,17 @@
 .live-projects-container {
-  height: 100%;
-  background: rgb(117, 117, 117);
+  position: relative;
+  left: -10000px;
+  background-color: #2a2a2a;
+  animation: appear 1s ease-in-out forwards;
+  padding-top: 50px;
+}
+
+@keyframes appear {
+  100% {
+    left: 0px;
+  }
+}
+
+.tools-container {
+  padding: 50px;
 }

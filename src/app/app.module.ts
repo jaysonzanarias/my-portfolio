@@ -20,6 +20,7 @@ import { TutorialsComponent } from './content/tutorials/tutorials.component';
 import { VlogComponent } from './content/vlog/vlog.component';
 import { ContactComponent } from './content/contact/contact.component';
 import { LiveProjectsComponent } from './content/live-projects/live-projects.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { LiveProjectsComponent } from './content/live-projects/live-projects.com
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

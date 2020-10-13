@@ -1,35 +1,186 @@
+.skills-menu {
+  height: 60%;
+  width: 13%;
+  position: fixed;
+  top: 18%;
+  left: 3%;
+
+  color: #8a8a8a;
+  overflow: hidden;
+}
+
+.skills-menu-up {
+  height: 5%;
+  width: 100%;
+  margin-bottom: 5px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.skills-menu-content {
+  max-height: 85%;
+  width: 100%;
+  padding-right: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+  background: transparent;
+
+  font-size: 1.15em;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  line-height: 2em;
+  word-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.skills-menu-down {
+  height: 5%;
+  width: 100%;
+
+  margin-top: 10px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.skills-menu-content-item {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.skills-menu-content-item:hover {
+  color: #cacaca;
+  font-weight: bolder;
+}
+
+/* TODO: to move in the div's onclick behavior. add class when selected. */
+.skills-menu-content-item:active {
+  opacity: 50%;
+  transition: 100ms ease-in-out;
+}
+
+.skills-menu-up:hover,
+.skills-menu-down:hover {
+  color: #cacaca;
+  animation: blinker 0s linear;
+  transition: 100ms ease-in-out;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.skills-menu-up:active,
+.skills-menu-down:active {
+  opacity: 50%;
+  transition: 100ms linear;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .skills-container {
-  background: black;
-  display: flex;
-  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #2a2a2a;
 }
 
-.skills-category-title {
-  display: flex;
-  background: white;
+.skills-overview {
+  margin: 50px;
+  text-align: center;
 }
 
-.tech-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  background: lightgray;
-  margin-top: 5%;
+.fa-custom-style {
+  color: #cacaca;
+  margin: 20px;
 }
 
-.tech-item {
-  display: flex;
-  margin: 10px;
+.skills-table-container {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
 }
 
-.tech-icon {
-  height: 50px;
-  width: 50px;
+.skills-category-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  text-align: center;
 }
 
-.tech-details-container {
-  background: green;
-  display: flex;
-  flex-direction: column;
+.skills-category-content {
+  padding-left: 50px;
+  padding-right: 70px;
+}
+
+h1 {
+  color: #cacaca;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.45em;
+  letter-spacing: -2px;
+  margin-bottom: 0.1em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #cacaca;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.35em;
+  letter-spacing: -0.045em;
+
+  padding: 0;
+  margin-bottom: 0.4em;
+  margin: 20px;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 50px;
+
+  border-collapse: separate;
+  border-spacing: 0px 20px;
+  /* background-color: green; */
+}
+
+td {
+  color: #8a8a8a;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  word-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 2em;
+
+  /* border: 1px solid #8a8a8a; */
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+  padding-left: 10px;
+}
+
+/* li {
+  list-style-type:none;
+} */
+
+.category {
+  vertical-align: top;
+  width: 45%;
+  font-weight: bold;
+  font-size: 1.5em;
 }

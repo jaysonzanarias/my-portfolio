@@ -6,7 +6,8 @@ body {
   width: 100%;
 
   /* gray */
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #2a2a2a;
 
   /* green */
   /* background-color: rgb(23, 51, 34); */

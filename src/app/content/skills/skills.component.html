@@ -1,67 +1,59 @@
 <div class="skills-container">
-    <div class="skills-category-title">
-        Front End
+    <div class="skills-overview">
+        <i class="fas fa-globe fa-9x fa-custom-style"></i>
+        <i class="fas fa-desktop fa-9x fa-custom-style"></i>
+        <i class="fas fa-server fa-9x fa-custom-style"></i>
+        <i class="fas fa-database fa-9x fa-custom-style"></i>
+        <i class="fas fa-layer-group fa-9x fa-custom-style"></i>
+        <i class="fas fa-cogs fa-9x fa-custom-style"></i>
     </div>
-    <div class="tech-container">
-        <div class="tech-item">
-            <div class="">
-                <img [src]="imagePath + image.image_name" class="tech-icon" />
+
+    <div class="skills-table-container">
+        <ng-container *ngFor="let skill of data; index">
+            <div class="skills-category-header">
+                <h1>{{skill.skill_area}}</h1>
             </div>
-            <div class="tech-details-container">
-                <div>Angular</div>
-                <div>5 years</div>
-                <div>Level</div>
+            <div class="skills-category-content">
+                <ng-container *ngFor="let item of skill.skills">
+                    <h2 [attr.id]="item.id" style="margin-top: 50px;">{{item.category}}</h2>
+                    <table class="skills-table">
+                        <ng-container *ngFor="let technologies of item.category_data">
+                            <tr>
+                                <ng-container *ngIf="technologies.sub_category != '';else noSubCategory">
+                                    <td class="category">{{technologies.sub_category}}</td>
+                                    <!-- <td>{{technologies.technologies.join(', ')}}</td> -->
+                                    <td>
+                                        <li *ngFor="let technology of technologies.technologies">
+                                            {{technology}}
+                                        </li>
+                                    </td>
+                                </ng-container>
+
+                                <ng-template #noSubCategory>
+                                    <!-- <td>{{technologies.technologies.join(', ')}}</td> -->
+                                    <td>
+                                        <li *ngFor="let technology of technologies.technologies">
+                                            {{technology}}
+                                        </li>
+                                    </td>
+                                </ng-template>
+                            </tr>
+                        </ng-container>
+                    </table>
+                </ng-container>
             </div>
-        </div>
-        <div class="tech-item">
-            <div class="">
-                <img [src]="imagePath + image.image_name" class="tech-icon" />
-            </div>
-            <div class="tech-details-container">
-                <div>Angular</div>
-                <div>5 years</div>
-                <div>Level</div>
-            </div>
-        </div>
-        <div class="tech-item">
-            <div class="">
-                <img [src]="imagePath + image.image_name" class="tech-icon" />
-            </div>
-            <div class="tech-details-container">
-                <div>Angular</div>
-                <div>5 years</div>
-                <div>Level</div>
-            </div>
-        </div>
-        <div class="tech-item">
-            <div class="">
-                <img [src]="imagePath + image.image_name" class="tech-icon" />
-            </div>
-            <div class="tech-details-container">
-                <div>Angular</div>
-                <div>5 years</div>
-                <div>Level</div>
-            </div>
-        </div>
-        <div class="tech-item">
-            <div class="">
-                <img [src]="imagePath + image.image_name" class="tech-icon" />
-            </div>
-            <div class="tech-details-container">
-                <div>Angular</div>
-                <div>5 years</div>
-                <div>Level</div>
-            </div>
-        </div>
-        <div class="tech-item">
-            <div class="">
-                <img [src]="imagePath + image.image_name" class="tech-icon" />
-            </div>
-            <div class="tech-details-container">
-                <div>Angular</div>
-                <div>5 years</div>
-                <div>Level</div>
-            </div>
-        </div>
+        </ng-container>
+    </div>
+</div>
+
+<div class="skills-menu">
+    <div class="skills-menu-up blink_me" (click)="miniMenuScroll('up')"><i class="fas fa-2x fa-chevron-up"></i></div>
+    <div #skillsMenuContent class="skills-menu-content">
+        <ng-container *ngFor="let skill of data">
+            <div *ngFor="let item of skill.skills" class="skills-menu-content-item" (click)="scroll(item.id)">
+                {{item.category}}</div>
+        </ng-container>
+    </div>
+    <div class="skills-menu-down blink_me" (click)="miniMenuScroll('down')"><i class="fas fa-2x fa-chevron-down"></i>
     </div>
 </div>

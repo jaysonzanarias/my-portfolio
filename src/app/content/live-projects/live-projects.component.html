@@ -1,3 +1,20 @@
 <div class="live-projects-container">
-    <p>live-projects works!</p>
+    <div class="tools-container">
+        <mat-card>
+            <h1>Convert list of strings to an array format (comma separated values)</h1>
+            <h2>Input: </h2>
+            <textarea #listOfStringToArrayInput rows="4" cols="100"
+                placeholder="val 1&#10;*val 2&#10;val 3&#10;val 4"></textarea>
+            <br>
+            <span>Strings starting with the following will be put last in the list <input #charExceptions type="text"
+                    value="*"></span>
+            <br><br>
+            <button (click)="convertListOfStringToArray(listOfStringToArrayInput.value, charExceptions.value)">Convert
+                it!</button>
+            <br><br>
+            <h2>Output: </h2>
+            <textarea [(ngModel)]="listOfStringToArrayOutput" rows="4" cols="100"
+                placeholder='"val 1", "val 3", "val 4", "*val 2"'></textarea>
+        </mat-card>
+    </div>
 </div>
