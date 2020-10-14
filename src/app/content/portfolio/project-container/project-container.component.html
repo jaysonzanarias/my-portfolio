@@ -1,20 +1,22 @@
-<h1>{{selectedProject?.name}}</h1>
+<div class="project-container">
+    <h2>{{selectedProject?.name}}</h2>
 
-<p *ngIf="selectedProject?.type">
-    <i>Tag: {{selectedProject?.type }}</i>
-</p>
+    <p *ngIf="selectedProject?.type">
+        <i>Tag: {{selectedProject?.type}}</i>
+    </p>
 
-<mat-form-field class="project-details-textarea">
-    <textarea readonly matInput cdkTextareaAutosize="true" [value]="selectedProject?.details">
+    <mat-form-field class="project-details-textarea">
+        <textarea readonly matInput cdkTextareaAutosize="true" [value]="selectedProject?.details">
         {{selectedProject?.details}}
-    </textarea>
+        </textarea>
 
-    <div class="image-container">
-        <div *ngFor="let image of selectedProject?.images">
-            <img [src]="imagePath + image.image_name" class="project-screenshot" />
-            <div>
-                <i>{{image.caption}}</i>
+        <div class="image-container">
+            <div *ngFor="let image of selectedProject?.images">
+                <img [src]="imagePath + image.image_name" class="project-screenshot" />
+                <div>
+                    <i>{{image.caption}}</i>
+                </div>
             </div>
         </div>
-    </div>
-</mat-form-field>
+    </mat-form-field>
+</div>

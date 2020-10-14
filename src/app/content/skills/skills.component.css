@@ -46,6 +46,7 @@
 }
 
 .skills-menu-content-item {
+  font-family: Lato, Helvetica, Arial, sans-serif;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -174,9 +175,9 @@ td {
   padding-left: 10px;
 }
 
-/* li {
-  list-style-type:none;
-} */
+li {
+  list-style-type: circle;
+}
 
 .category {
   vertical-align: top;

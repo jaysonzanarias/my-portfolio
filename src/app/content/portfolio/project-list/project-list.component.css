@@ -1,19 +1,41 @@
 .clickable-look {
   cursor: pointer;
-  color: #0645ad;
+  /* color: #0645ad; */
+  color: rgb(138, 138, 138);
   list-style-type: none;
   transition: 0.3s ease-in-out;
 }
 
 .clickable-look:hover {
-  color: rgb(0, 0, 0);
+  color: #cacaca;
+  /* font-weight: bolder; */
+  /* color: rgb(0, 0, 0); */
   transition: 0.5s ease-in-out;
 }
 
 .active {
-  color: rgb(0, 0, 0);
+  color: #cacaca;
+  font-weight: bold;
+  /* color: rgb(0, 0, 0); */
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: large;
+  /* font-size: large; */
   transition: 0.5s ease-in-out;
+}
+
+h2 {
+  color: #cacaca;
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.35em;
+  letter-spacing: -0.045em;
+}
+
+li {
+  font-size: 1.15em;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  line-height: 2em;
+  word-spacing: 0.02em;
+  font-weight: 400;
 }

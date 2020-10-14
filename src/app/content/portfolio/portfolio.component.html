@@ -1,6 +1,6 @@
 <div class="portfolio-container">
     <!-- height: depends on the length of text -->
-    <div class="portfolio-header">
+    <!-- <div class="portfolio-header">
         <div class="portfolio-header-image">
             <div class="portfolio-header-content">
                 <div class="portfolio-title">My Portfolio</div>
@@ -13,10 +13,10 @@
                 to visit the Contact page for more details. Thank you!
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- height: depends on the dimension of each categories -->
-    <div class="portfolio-category">
+    <!-- <div class="portfolio-category">
         <div class="portfolio-category-container">
             <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('All');">
                 <div class="portfolio-category-item-all portfolio-category-item-overlay ">
@@ -61,24 +61,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div #portDetailsContainer class="portfolio-item-details-container">
-        <div class="project-title">{{ category }} Projects</div>
+        <!-- <div class="project-title">{{ category }} Projects</div> -->
         <div class="project-details">
             <project-list class="project-list" (onSelect)="setSelected($event)" [(category)]="category"></project-list>
             <project-container class="project-container" [selectedProject]="selectedProject"></project-container>
             <div class="project-details-outline">
                 <div *ngIf="selectedProject">
-                    <h1>Technologies Used</h1>
-                    <p>{{selectedProject?.technologies}}</p>
+                    <h2>Technologies Used</h2>
+                    <div class="project-details-outline-technologies">{{selectedProject?.technologies}}</div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="footer">
-        <div>Jayson Zanarias</div>
-        <div>© {{copyrightYear}}. All Rights Reserved.</div>
     </div>
 </div>

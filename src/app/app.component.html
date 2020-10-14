@@ -1,5 +1,9 @@
-<div #appComponent class="app-component">
+<div #appComponent>
     <app-navbar class="app-component-navbar"></app-navbar>
     <app-content></app-content>
+    <div class="footer" *ngIf="router.url != '/'">
+        <div>Jayson Zanarias</div>
+        <div>© {{copyrightYear}}. All Rights Reserved.</div>
+    </div>
 </div>
 <i id="go-to-top" class="no-go-to-top fas fa-chevron-up fa-3x" (click)="scroll(appComponent);"></i>

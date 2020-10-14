@@ -1,7 +1,3 @@
-.app-component {
-  height: 100%;
-}
-
 .app-component-navbar {
   z-index: 999;
   position: absolute;
@@ -26,4 +22,14 @@
   color: green;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+
+.footer {
+  /* background: rgb(42, 42, 42); */
+  background: rgb(34, 34, 34);
+  color: rgb(114, 114, 114);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 25px;
+  text-align: center;
 }

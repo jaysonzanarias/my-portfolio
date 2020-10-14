@@ -31,6 +31,13 @@ i {
   font-size: 16px;
 }
 
+.selected {
+  padding-bottom: 5px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: inherit;
+}
+
 .disabled-menu-item {
   color: gray !important;
   pointer-events: none !important;
