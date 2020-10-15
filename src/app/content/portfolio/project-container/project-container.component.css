@@ -18,7 +18,7 @@
   margin: 60px 20px 5px 20px;
   border: solid black 2px;
   /* filter: brightness(.8) contrast(1.2); */
-  filter: brightness(.8);
+  filter: brightness(.9);
 }
 
 .project-details-textarea {
