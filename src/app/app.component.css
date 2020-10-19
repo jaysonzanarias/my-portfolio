@@ -1,35 +1,135 @@
-.app-component-navbar {
+#mat-toolbar {
   z-index: 999;
-  position: absolute;
   top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.4s ease-in-out;
 }
 
-.no-go-to-top {
-  visibility: hidden;
+span {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.noscroll {
+  background: transparent;
+}
+
+.scroll {
+  background: rgb(0, 0, 0);
+}
+
+.selected {
+  padding-bottom: 0.5rem;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+}
+
+.disabled-menu-item {
+  color: gray !important;
+  pointer-events: none !important;
+}
+
+mat-sidenav-container,
+mat-sidenav,
+mat-sidenav-content {
+  background-color: inherit;
+}
+
+mat-sidenav,
+.hamburger-button {
   display: none;
+}
+
+.footer {
+  background: rgb(34, 34, 34);
+  color: rgb(114, 114, 114);
+  padding: 1.5rem 0;
+  line-height: 1.5rem;
+  text-align: center;
 }
 
 .go-to-top {
   visibility: visible;
   position: fixed;
   z-index: 999;
-  bottom: 20px;
-  right: 30px;
+  bottom: 0.5em;
+  right: 0.75em;
   color: rgb(187, 187, 187);
+  cursor: pointer;
 }
 
 .go-to-top:hover {
   color: green;
   transition: 0.5s ease-in-out;
-  cursor: pointer;
 }
 
-.footer {
-  /* background: rgb(42, 42, 42); */
-  background: rgb(34, 34, 34);
-  color: rgb(114, 114, 114);
-  padding-top: 25px;
-  padding-bottom: 25px;
-  line-height: 25px;
-  text-align: center;
+.hide-go-to-top {
+  visibility: hidden;
+  display: none;
+}
+
+/* ============================================================ */
+
+@media only screen and (max-width: 850px) {
+  #mat-toolbar {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+    position: fixed;
+    z-index: 999;
+    top: 1.5rem;
+    left: 1rem;
+    cursor: pointer;
+  }
+
+  span:focus,
+  a:focus,
+  i:focus {
+    outline: none;
+  }
+
+  mat-sidenav-container {
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  mat-sidenav-container i {
+    font-size: 2.5rem;
+  }
+
+  mat-sidenav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2a2a2a;
+    padding: 1rem 1rem;
+  }
+
+  mat-sidenav span {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  mat-sidenav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  mat-sidenav i {
+    margin-right: 1rem;
+  }
+
+  mat-sidenav-content {
+    overflow: hidden;
+    color: white;
+  }
 }

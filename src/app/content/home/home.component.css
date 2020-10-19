@@ -1,37 +1,30 @@
 .home-image {
   background-image: url("src/assets/images/image_2.jpg");
   min-height: 100vh;
-  max-height: 100%;
-
   opacity: 0.2;
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .home-title-container {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
-  top: 35%;
+  top: 30%;
+  left: 3%;
   color: white;
-  margin-top: 3%;
-  margin-left: 3%;
+  margin-top: 0;
 }
 
-.home-title {
+h1 {
   font-size: 6rem;
+  margin: 0 -5.5px;
+  line-height: 4rem;
 }
 
-.home-subtitle {
+h5 {
   font-size: 1.5rem;
-  padding-left: 15px;
-  margin-top: 56px;
-  margin-bottom: 32px;
-}
-
-.home-social-media {
-  padding-left: 15px;
+  margin: 2rem 0;
+  line-height: 2rem;
 }
 
 a {
@@ -40,18 +33,23 @@ a {
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 850px) {
+  h1 {
+    font-size: 4rem;
+    padding: 0 2rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 2rem;
+  }
+
   .home-title-container {
+    font-size: 1rem;
+    width: 100%;
     top: 30%;
+    left: 0;
     text-align: center;
-  }
-
-  .home-title {
-    font-size: 3.4rem;
-  }
-
-  .home-subtitle {
-    font-size: 1.2rem;
-    padding-left: 5px;
   }
 }

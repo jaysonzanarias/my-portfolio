@@ -2,10 +2,11 @@
 
 html,
 body {
-  /* height: 100%;
-  width: 100%; */
-
   background-color: #2a2a2a;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +15,21 @@ body {
   /* font-family: MontSerrat, Tahoma, Arial, sans-serif; */
 }
 
-html {
-  scroll-behavior: smooth;
+div {
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+}
+
+h1 {
+  font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+  /* letter-spacing: normal; */
+  /* margin: 0 0 16px; */
+}
+
+h5 {
+  font: 400 calc(14px * 0.83) / 20px Roboto, "Helvetica Neue", sans-serif;
+  /* font-size: 1.5rem; */
+  /* padding-left: 15px; */
+  /* margin-top: 56px;
+  margin-bottom: 32px; */
+  /* margin: 0 0 12px; */
 }

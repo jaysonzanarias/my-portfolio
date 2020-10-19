@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectListComponent } from './content/portfolio/project-list/project-list.component';
 import { ProjectContainerComponent } from './content/portfolio/project-container/project-container.component';
 import { PortfolioComponent } from './content/portfolio/portfolio.component';
@@ -22,7 +21,6 @@ import { LiveProjectsComponent } from './content/live-projects/live-projects.com
   declarations: [
     AppComponent,
     ContentComponent,
-    NavbarComponent,
     ProjectListComponent,
     ProjectContainerComponent,
     PortfolioComponent,
