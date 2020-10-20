@@ -90,7 +90,7 @@
 }
 
 .skills-overview {
-  margin-top: 6%;
+  margin-top: 5rem;
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
@@ -121,6 +121,7 @@
 
 h2 {
   margin: 0 1.5rem;
+  width: 100%;
 }
 
 table {
@@ -147,4 +148,59 @@ li {
   width: 45%;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 850px) {
+  .skills-menu {
+    display: none;
+  }
+
+  .skills-overview {
+    margin-top: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .skills-table-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .skills-category-header {
+    margin: 0 0;
+    font-size: 2vw;
+  }
+
+  .skills-category-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h2 {
+    margin: 0.1em 0 !important;
+    width: 100%;
+    font-size: 4vw;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 1.5rem;
+    border-spacing: 0 1rem;
+  }
+
+  td {
+    color: #8a8a8a;
+    word-spacing: 0.02em;
+    font-size: 3vw;
+    line-height: 4vw;
+    padding-left: 0;
+  }
+
+  .category {
+    width: 60%;
+    font-weight: 400;
+    font-size: 3.5vw;
+  }
 }
