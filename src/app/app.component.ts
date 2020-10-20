@@ -12,14 +12,16 @@ export class AppComponent implements OnInit {
   copyrightYear: number;
   opened = false;
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
     this.copyrightYear = new Date().getFullYear();
   }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth' });
+  scroll(elID: string) {
+    const yOffset = -100;
+    const y = document.querySelector("#" + elID).getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
   }
 
   @HostListener('window:scroll', ['$event'])

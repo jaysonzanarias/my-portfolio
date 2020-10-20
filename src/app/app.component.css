@@ -40,6 +40,7 @@ mat-sidenav-container,
 mat-sidenav,
 mat-sidenav-content {
   background-color: inherit;
+  overflow: initial;
 }
 
 mat-sidenav,

@@ -35,12 +35,3 @@
 .project-details-textarea::ng-deep .mat-form-field-underline {
   display: none;
 }
-
-h2 {
-  color: #cacaca;
-  font-family: MontSerrat, Tahoma, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.35em;
-  letter-spacing: -0.045em;
-}

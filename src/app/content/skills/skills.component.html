@@ -1,4 +1,18 @@
 <div class="skills-container">
+    <div class="skills-menu">
+        <div class="skills-menu-up blink_me" (click)="miniMenuScroll('up')"><i class="fas fa-2x fa-chevron-up"></i>
+        </div>
+        <div #skillsMenuContent class="skills-menu-content">
+            <ng-container *ngFor="let skill of data">
+                <div *ngFor="let item of skill.skills" class="skills-menu-content-item" (click)="scroll(item.id)">
+                    {{item.category}}</div>
+            </ng-container>
+        </div>
+        <div class="skills-menu-down blink_me" (click)="miniMenuScroll('down')"><i
+                class="fas fa-2x fa-chevron-down"></i>
+        </div>
+    </div>
+
     <div class="skills-overview">
         <i class="fas fa-globe fa-9x fa-custom-style"></i>
         <i class="fas fa-desktop fa-9x fa-custom-style"></i>
@@ -16,7 +30,7 @@
             <div class="skills-category-content">
                 <ng-container *ngFor="let item of skill.skills">
                     <h2 [attr.id]="item.id" style="margin-top: 50px;">{{item.category}}</h2>
-                    <table class="skills-table">
+                    <table>
                         <ng-container *ngFor="let technologies of item.category_data">
                             <tr>
                                 <ng-container *ngIf="technologies.sub_category != '';else noSubCategory">
@@ -43,17 +57,5 @@
                 </ng-container>
             </div>
         </ng-container>
-    </div>
-</div>
-
-<div class="skills-menu">
-    <div class="skills-menu-up blink_me" (click)="miniMenuScroll('up')"><i class="fas fa-2x fa-chevron-up"></i></div>
-    <div #skillsMenuContent class="skills-menu-content">
-        <ng-container *ngFor="let skill of data">
-            <div *ngFor="let item of skill.skills" class="skills-menu-content-item" (click)="scroll(item.id)">
-                {{item.category}}</div>
-        </ng-container>
-    </div>
-    <div class="skills-menu-down blink_me" (click)="miniMenuScroll('down')"><i class="fas fa-2x fa-chevron-down"></i>
     </div>
 </div>

@@ -1,53 +1,49 @@
+.skills-container {
+  padding-bottom: 50px;
+}
+
 .skills-menu {
-  height: 60%;
-  width: 13%;
-  position: fixed;
-  top: 18%;
-  left: 3%;
+  max-height: 80vh;
+  max-width: 320px;
+  width: 20vw;
+  left: 5%;
+  float: left;
+  margin-top: 40vh;
 
   color: #8a8a8a;
   overflow: hidden;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20vh;
 }
 
-.skills-menu-up {
-  height: 5%;
-  width: 100%;
-  margin-bottom: 5px;
-
+.skills-menu-up,
+.skills-menu-down {
+  height: 2rem;
   text-align: center;
   cursor: pointer;
 }
 
 .skills-menu-content {
-  max-height: 85%;
+  max-height: 62vh;
   width: 100%;
-  padding-right: 20px;
+  padding-right: 2rem;
   overflow-y: scroll;
   overflow-x: hidden;
 
   scroll-behavior: smooth;
   background: transparent;
-
-  font-size: 1.15em;
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  line-height: 2em;
-  word-spacing: 0.02em;
-  font-weight: 400;
-}
-
-.skills-menu-down {
-  height: 5%;
-  width: 100%;
-
-  margin-top: 10px;
-
-  text-align: center;
-  cursor: pointer;
 }
 
 .skills-menu-content-item {
+  font-size: 1.15rem;
   font-family: Lato, Helvetica, Arial, sans-serif;
+  line-height: 2rem;
+  word-spacing: 0.02rem;
+  font-weight: 400;
   cursor: pointer;
+
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -93,86 +89,53 @@
   }
 }
 
-.skills-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #2a2a2a;
-}
-
 .skills-overview {
-  margin: 50px;
+  margin-top: 6%;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .fa-custom-style {
   color: #cacaca;
-  margin: 20px;
+  font-size: 8vw;
 }
 
 .skills-table-container {
-  margin-left: 20%;
+  margin-left: 23%;
   margin-right: 20%;
-  margin-top: 1%;
 }
 
 .skills-category-header {
-  margin-top: 50px;
-  margin-bottom: 50px;
-
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .skills-category-content {
-  padding-left: 50px;
-  padding-right: 70px;
-}
-
-h1 {
-  color: #cacaca;
-  font-family: MontSerrat, Tahoma, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 1.45em;
-  letter-spacing: -2px;
-  margin-bottom: 0.1em;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+  padding-left: 2.5rem;
+  padding-right: 3rem;
 }
 
 h2 {
-  color: #cacaca;
-  font-family: MontSerrat, Tahoma, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.35em;
-  letter-spacing: -0.045em;
-
-  padding: 0;
-  margin-bottom: 0.4em;
-  margin: 20px;
+  margin: 0 1.5rem;
 }
 
-.skills-table {
+table {
   width: 100%;
-  border-collapse: collapse;
-  margin-left: 50px;
-
-  border-collapse: separate;
-  border-spacing: 0px 20px;
-  /* background-color: green; */
+  margin-left: 3rem;
+  border-spacing: 0 1rem;
 }
 
 td {
   color: #8a8a8a;
   font-family: Lato, Helvetica, Arial, sans-serif;
   word-spacing: 0.02em;
-  font-weight: 400;
   font-size: 1.4em;
   line-height: 2em;
-
-  /* border: 1px solid #8a8a8a; */
-  /* padding-top: 5px; */
-  /* padding-bottom: 5px; */
-  padding-left: 10px;
+  padding-left: 2rem;
 }
 
 li {

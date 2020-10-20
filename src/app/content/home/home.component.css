@@ -7,21 +7,21 @@
   background-repeat: no-repeat;
 }
 
-.home-title-container {
+.home-container {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 3%;
   color: white;
   margin-top: 0;
 }
 
-h1 {
+.home-container-title {
   font-size: 6rem;
   margin: 0 -5.5px;
   line-height: 4rem;
 }
 
-h5 {
+.home-container-subtitle {
   font-size: 1.5rem;
   margin: 2rem 0;
   line-height: 2rem;
@@ -33,22 +33,43 @@ a {
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 850px) {
-  h1 {
+@media only screen and (max-width: 850px) and (min-width: 460px) {
+  .home-container-title {
     font-size: 4rem;
     padding: 0 2rem;
   }
 
-  h5 {
+  .home-container-subtitle {
     font-size: 1.5rem;
     margin: 2rem 0;
     padding: 0 2rem;
   }
 
-  .home-title-container {
+  .home-container {
     font-size: 1rem;
     width: 100%;
     top: 30%;
+    left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .home-container-title {
+    font-size: 3rem;
+    padding: 0 2rem;
+  }
+
+  .home-container-subtitle {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 2rem;
+  }
+
+  .home-container {
+    font-size: 1rem;
+    width: 100%;
+    top: 25%;
     left: 0;
     text-align: center;
   }

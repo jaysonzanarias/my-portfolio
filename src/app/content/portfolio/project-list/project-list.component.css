@@ -23,15 +23,6 @@
   transition: 0.5s ease-in-out;
 }
 
-h2 {
-  color: #cacaca;
-  font-family: MontSerrat, Tahoma, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.35em;
-  letter-spacing: -0.045em;
-}
-
 li {
   font-size: 1.15em;
   font-family: Lato, Helvetica, Arial, sans-serif;

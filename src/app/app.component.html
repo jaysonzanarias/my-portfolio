@@ -1,34 +1,59 @@
-<div #appComponent>
+<div id="appComponent">
         <mat-toolbar id="mat-toolbar" class="noscroll">
-                <span><a [ngClass]="{'selected': router.url == '/'}" routerLink=""><i
-                                        class="fas fa-home"></i>Home</a></span>
-                <span><a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills"><i
-                                        class="fas fa-brain"></i>
-                                Skills</a></span>
-                <span><a [ngClass]="{'selected': router.url == '/portfolio'}" routerLink="portfolio"><i
-                                        class="fas fa-project-diagram"></i> Portfolio</a></span>
-                <span><a [ngClass]="{'selected': router.url == '/tutorials'}" routerLink="tutorials"
-                                class="disabled-menu-item"><i class="fas fa-book-open"></i> Tutorials</a></span>
-                <span><a [ngClass]="{'selected': router.url == '/vlog'}" routerLink="vlog" class="disabled-menu-item"><i
-                                        class="fab fa-youtube"></i> Vlog</a></span>
-                <span><a [ngClass]="{'selected': router.url == '/contact'}" routerLink="contact"
-                                class="disabled-menu-item"><i class="fas fa-id-card"></i> Contact</a></span>
                 <span>
-                        <button class="disabled-menu-item" mat-raised-button color="primary"
-                                routerLink="live-projects"><i class="fas fa-rocket"></i> Live
-                                Projects</button>
+                        <a [ngClass]="{'selected': router.url == '/'}" routerLink="">
+                                <i class="fas fa-home"></i> Home
+                        </a>
+                </span>
+                <span>
+                        <a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills">
+                                <i class="fas fa-brain"></i> Skills
+                        </a>
+                </span>
+                <span>
+                        <a [ngClass]="{'selected': router.url == '/portfolio'}" routerLink="portfolio">
+                                <i class="fas fa-project-diagram"></i> Portfolio
+                        </a>
+                </span>
+                <span>
+                        <a [ngClass]="{'selected': router.url == '/tutorials'}" routerLink="tutorials"
+                                class="disabled-menu-item">
+                                <i class="fas fa-book-open"></i> Tutorials
+                        </a>
+                </span>
+                <span>
+                        <a [ngClass]="{'selected': router.url == '/vlog'}" routerLink="vlog" class="disabled-menu-item">
+                                <i class="fab fa-youtube"></i> Vlog</a>
+                </span>
+                <span>
+                        <a [ngClass]="{'selected': router.url == '/contact'}" routerLink="contact"
+                                class="disabled-menu-item">
+                                <i class="fas fa-id-card"></i> Contact
+                        </a>
+                </span>
+                <span>
+                        <button class="disabled-menu-item" mat-raised-button color="primary" routerLink="live-projects">
+                                <i class="fas fa-rocket"></i> Live Projects
+                        </button>
                 </span>
         </mat-toolbar>
         <mat-sidenav-container>
                 <mat-sidenav #sidenav [(opened)]="opened">
-                        <span><a [ngClass]="{'selected': router.url == '/'}" routerLink=""><i class="fas fa-home"></i>Home</a></span>
-                        <span><a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills"><i class="fas fa-brain"></i>Skills</a></span>
-                        <span><a [ngClass]="{'selected': router.url == '/portfolio'}" routerLink="portfolio"><i class="fas fa-project-diagram"></i>Portfolio</a></span>
-                        <span><a [ngClass]="{'selected': router.url == '/tutorials'}" routerLink="tutorials" class="disabled-menu-item"><i class="fas fa-book-open"></i>Tutorials</a></span>
-                        <span><a [ngClass]="{'selected': router.url == '/vlog'}" routerLink="vlog" class="disabled-menu-item"><i class="fab fa-youtube"></i>Vlog</a></span>
-                        <span><a [ngClass]="{'selected': router.url == '/contact'}" routerLink="contact" class="disabled-menu-item"><i class="fas fa-id-card"></i>Contact</a></span>
+                        <span><a [ngClass]="{'selected': router.url == '/'}" routerLink=""><i
+                                                class="fas fa-home"></i>Home</a></span>
+                        <span><a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills"><i
+                                                class="fas fa-brain"></i>Skills</a></span>
+                        <span><a [ngClass]="{'selected': router.url == '/portfolio'}" routerLink="portfolio"><i
+                                                class="fas fa-project-diagram"></i>Portfolio</a></span>
+                        <span><a [ngClass]="{'selected': router.url == '/tutorials'}" routerLink="tutorials"
+                                        class="disabled-menu-item"><i class="fas fa-book-open"></i>Tutorials</a></span>
+                        <span><a [ngClass]="{'selected': router.url == '/vlog'}" routerLink="vlog"
+                                        class="disabled-menu-item"><i class="fab fa-youtube"></i>Vlog</a></span>
+                        <span><a [ngClass]="{'selected': router.url == '/contact'}" routerLink="contact"
+                                        class="disabled-menu-item"><i class="fas fa-id-card"></i>Contact</a></span>
                         <span>
-                                <button class="disabled-menu-item" mat-raised-button color="primary" routerLink="live-projects"><i class="fas fa-rocket"></i>Live Projects</button>
+                                <button class="disabled-menu-item" mat-raised-button color="primary"
+                                        routerLink="live-projects"><i class="fas fa-rocket"></i>Live Projects</button>
                         </span>
                 </mat-sidenav>
                 <mat-sidenav-content>
@@ -41,4 +66,4 @@
         <div>Jayson Zanarias</div>
         <div>© {{copyrightYear}}. All Rights Reserved.</div>
 </div>
-<i id="go-to-top" class="hide-go-to-top fas fa-chevron-up fa-3x" (click)="scroll(appComponent);"></i>
+<i id="go-to-top" class="hide-go-to-top fas fa-chevron-up fa-3x" (click)="scroll('appComponent');"></i>
