@@ -6,7 +6,7 @@
   max-height: 80vh;
   max-width: 320px;
   width: 20vw;
-  left: 5%;
+  left: 4%;
   float: left;
   margin-top: 40vh;
 
@@ -15,7 +15,7 @@
 
   position: -webkit-sticky;
   position: sticky;
-  top: 20vh;
+  top: 15vh;
 }
 
 .skills-menu-up,
