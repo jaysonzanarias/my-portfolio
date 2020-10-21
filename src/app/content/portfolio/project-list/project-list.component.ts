@@ -55,9 +55,9 @@ let data = [
     •	Contact - shows where you can contact me.
     •	Live Projects - is where you can check my online projects/tools I've created for fun. Hopefully, some of them will be useful for you or other people.
 
-    Since I'm not a UI/UX expert, I tried first copying different porfolio designs I find interesting and tried recreating them on my own from scratch (allowing me to learn and improve a lot in the process) then adding a little twist/design ideas of my own. Below are the different sites/portfolio where I’ve taken (or copied) the design ideas for this site. Check them out, their portfolios are really cool (that's why I tried mimicking them).
-    •	Ceferino Jose II: https://cefjoeii.com/
-    •	John Henry Joromat: https://jhenryj09.github.io/
+    Since I'm not a UI/UX expert, I tried first copying different porfolio designs I find interesting and tried recreating them on my own from scratch (allowing me to learn and improve a lot in the process) then adding a little twist/design ideas of my own. Below are my main resources for web design ideas.
+    •	DesignCourse: https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow
+    •	Traversy Media: https://www.youtube.com/user/TechGuyWeb
 
     For fun, I’ll be listing the different challenges I’ve faced when developing my portfolio (I’ll add more as I continue to improve this site):
       1.	CSS/Layout design
