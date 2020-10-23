@@ -1,7 +1,77 @@
 .portfolio-container {
-  margin-top: 50px;
+  /* margin-top: 50%;
+  width: 100%; */
+  margin: 5% 10%;
   height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: rgb(55, 55, 55);
+  margin: 1rem;
+  padding: 0;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card img {
+  margin: 0 0 1rem 0;
+  object-position: center;
+  object-fit: cover;
   width: 100%;
+  height: 200px;
+}
+
+mat-card-title,
+mat-card-content,
+mat-card-actions {
+  color: #cacaca;
+}
+
+mat-card-subtitle {
+  color: #cacaca;
+  /* color: #b1b1b1; */
+}
+
+mat-card-subtitle p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+mat-card-title {
+  font-family: MontSerrat, Tahoma, Arial, sans-serif;
+}
+
+mat-card-content {
+  color: #b1b1b1;
+  padding: 0 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+  height: 5rem;
+}
+
+mat-card-content p {
+  line-height: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+mat-card-actions {
+  text-align: right;
+  margin: 0.5rem 0 0 0 !important;
+  padding: 0.7rem 0.6rem 1rem 0 !important;
 }
 
 .portfolio-header {
@@ -245,4 +315,3 @@
   word-spacing: 0.02em;
   font-weight: 400;
 }
-
