@@ -53,6 +53,11 @@ a {
     left: 0;
     text-align: center;
   }
+
+  a {
+    margin: 0 3vw;
+    /* font-size: 3vw; */
+  }
 }
 
 @media only screen and (max-width: 465px) {
@@ -73,5 +78,10 @@ a {
     top: 25%;
     left: 0;
     text-align: center;
+  }
+
+  a {
+    margin: 0 3vw;
+    font-size: 3vw;
   }
 }

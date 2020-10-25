@@ -3,10 +3,10 @@
     <ng-container *ngFor="let project of projects">
         <mat-card class="project-card">
             <div *ngIf="project.images[0]; else noPicture">
-                <img mat-card-image src='{{ "../../../assets/images/project_images/" + project.images[0].image_name }}' alt="">
+                <img mat-card-image src='{{ "assets/images/project_images/" + project.images[0].image_name }}' alt="">
             </div>
             <ng-template #noPicture>
-                <img mat-card-image src="../../../assets/images/project_images/noimage.png" alt="">
+                <img mat-card-image src="assets/images/project_images/noimage.png" alt="">
             </ng-template>
             <mat-card-header>
                 <mat-card-title>{{project.name}}</mat-card-title>
