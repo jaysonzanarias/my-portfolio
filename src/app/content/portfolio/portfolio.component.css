@@ -15,6 +15,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  opacity: 0.6;
+  transition: 0.3s ease-in-out;
 }
 
 .project-card img {
@@ -32,7 +38,8 @@ mat-card-actions {
 }
 
 mat-card-subtitle {
-  color: #cacaca;
+  /* color: #cacaca; */
+  color: white;
   /* color: #b1b1b1; */
 }
 
@@ -46,11 +53,13 @@ mat-card-subtitle p {
 }
 
 mat-card-title {
+  color: orange;
   font-family: MontSerrat, Tahoma, Arial, sans-serif;
 }
 
 mat-card-content {
-  color: #b1b1b1;
+  /* color: #b1b1b1; */
+  color: #9a9a9a;
   padding: 0 1rem;
   margin: 0.5rem 0 0.5rem 0;
   height: 5rem;
@@ -66,9 +75,13 @@ mat-card-content p {
 }
 
 mat-card-actions {
+  /* color: orange; */
+  /* color: #f1f1f1; */
+  color: #dcdcdc;
   text-align: right;
   margin: 0.5rem 0 0 0 !important;
   padding: 0.7rem 0.6rem 1rem 0 !important;
+  pointer-events: none;
 }
 
 .portfolio-header {

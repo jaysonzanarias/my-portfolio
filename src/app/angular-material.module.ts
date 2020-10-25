@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatRippleModule } from '@angular/material/core';
 
 const material = [
   BrowserAnimationsModule,
@@ -13,6 +14,7 @@ const material = [
   MatCardModule,
   MatInputModule,
   MatSidenavModule,
+  MatRippleModule
 ]
 
 @NgModule({

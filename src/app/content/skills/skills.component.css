@@ -21,6 +21,7 @@
 
 .skills-menu-up,
 .skills-menu-down {
+  color:orange;
   height: 2rem;
   text-align: center;
   cursor: pointer;
@@ -55,7 +56,8 @@
 }
 
 .skills-menu-content-item:hover {
-  color: #cacaca;
+  /* color: #cacaca; */
+  color: orange;
   font-weight: bolder;
 }
 
@@ -67,7 +69,8 @@
 
 .skills-menu-up:hover,
 .skills-menu-down:hover {
-  color: #cacaca;
+  /* color: #cacaca; */
+  color: orange;
   animation: blinker 0s linear;
   transition: 100ms ease-in-out;
   font-size: larger;

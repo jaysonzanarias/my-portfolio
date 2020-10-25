@@ -69,6 +69,7 @@ a:hover > i {
   padding-bottom: 0.5rem;
   border-bottom-width: 0.2rem;
   border-bottom-style: solid;
+  border-color: orange;
   transition: 0.2s;
 }
 
@@ -108,7 +109,7 @@ mat-sidenav,
 }
 
 .go-to-top:hover {
-  color: green;
+  color: orange;
   transition: 0.5s ease-in-out;
 }
 
