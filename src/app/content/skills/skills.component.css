@@ -95,8 +95,8 @@
 
 .skills-overview {
   margin-top: 5rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 23%;
+  margin-right: 23%;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -104,7 +104,7 @@
 
 .fa-custom-style {
   color: #cacaca;
-  font-size: 8vw;
+  font-size: 6.5vw;
 }
 
 .skills-table-container {

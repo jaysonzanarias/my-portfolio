@@ -1,26 +1,35 @@
-.home-image {
-  background-image: url("src/assets/images/image_2.jpg");
+.home-container {
+
+}
+
+.hero-section {
+
+}
+
+.intro-image {
   min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("src/assets/images/image_2.jpg");
   opacity: 0.2;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.home-container {
+.intro {
   position: absolute;
   top: 35%;
   left: 3%;
   color: white;
 }
 
-.home-container-title {
+.intro-title {
   font-size: 6rem;
   margin: 0 -5.5px;
   line-height: 4rem;
 }
 
-.home-container-subtitle {
+.intro-subtitle {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: .5rem;
@@ -35,12 +44,12 @@ a {
 }
 
 @media only screen and (max-width: 850px) and (min-width: 460px) {
-  .home-container-title {
+  .intro-title {
     font-size: 4rem;
     padding: 0 2rem;
   }
 
-  .home-container-subtitle {
+  .intro-subtitle {
     font-size: 1.5rem;
     margin: 2rem 0;
     padding: 0 2rem;
@@ -56,17 +65,16 @@ a {
 
   a {
     margin: 0 3vw;
-    /* font-size: 3vw; */
   }
 }
 
 @media only screen and (max-width: 465px) {
-  .home-container-title {
+  .intro-title {
     font-size: 3rem;
     padding: 0 2rem;
   }
 
-  .home-container-subtitle {
+  .intro-subtitle {
     font-size: 1.5rem;
     margin: 2rem 0;
     padding: 0 2rem;

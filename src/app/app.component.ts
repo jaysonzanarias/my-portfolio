@@ -18,6 +18,11 @@ export class AppComponent implements OnInit {
     this.copyrightYear = new Date().getFullYear();
   }
 
+  isValidURL(url: string) {
+    const validURL = /portfolio/;
+    return validURL.test(url);
+  }
+
   scroll(elID: string) {
     const yOffset = -100;
     const y = document.querySelector("#" + elID).getBoundingClientRect().top + window.pageYOffset + yOffset;

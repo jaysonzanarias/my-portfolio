@@ -6,13 +6,13 @@
                         </a>
                 </span>
                 <span>
-                        <a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills">
-                                <i class="fas fa-brain"></i> Skills
+                        <a [ngClass]="{'selected': isValidURL(router.url)}" routerLink="portfolio">
+                                <i class="fas fa-project-diagram"></i> Portfolio
                         </a>
                 </span>
                 <span>
-                        <a [ngClass]="{'selected': router.url == '/portfolio'}" routerLink="portfolio">
-                                <i class="fas fa-project-diagram"></i> Portfolio
+                        <a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills">
+                                <i class="fas fa-brain"></i> Skills
                         </a>
                 </span>
                 <span>
@@ -41,10 +41,10 @@
                 <mat-sidenav #sidenav [(opened)]="opened">
                         <span><a [ngClass]="{'selected': router.url == '/'}" routerLink=""><i
                                                 class="fas fa-home"></i>Home</a></span>
+                        <span><a [ngClass]="{'selected': isValidURL(router.url)}" routerLink="portfolio"><i
+                                                class="fas fa-project-diagram"></i>Portfolio</a></span>
                         <span><a [ngClass]="{'selected': router.url == '/skills'}" routerLink="skills"><i
                                                 class="fas fa-brain"></i>Skills</a></span>
-                        <span><a [ngClass]="{'selected': router.url == '/portfolio'}" routerLink="portfolio"><i
-                                                class="fas fa-project-diagram"></i>Portfolio</a></span>
                         <span><a [ngClass]="{'selected': router.url == '/tutorials'}" routerLink="tutorials"
                                         class="disabled-menu-item"><i class="fas fa-book-open"></i>Tutorials</a></span>
                         <span><a [ngClass]="{'selected': router.url == '/vlog'}" routerLink="vlog"
@@ -61,9 +61,9 @@
                         <app-content></app-content>
                 </mat-sidenav-content>
         </mat-sidenav-container>
-</div>
-<div class="footer" *ngIf="router.url != '/'">
-        <div>Jayson Zanarias</div>
-        <div>© {{copyrightYear}}. All Rights Reserved.</div>
+        <div class="footer" *ngIf="router.url != '/'">
+                <div>Jayson Zanarias</div>
+                <div>© {{copyrightYear}}. All Rights Reserved.</div>
+        </div>
 </div>
 <i id="go-to-top" class="hide-go-to-top fas fa-chevron-up fa-3x" (click)="scroll('appComponent');"></i>

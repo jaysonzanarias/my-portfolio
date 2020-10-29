@@ -1,7 +1,14 @@
 .portfolio-container {
-  margin: 5% 20%;
+  margin: 4% 0%;
+  padding: 2% 0%;
   height: 100%;
-  width: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -324,4 +331,10 @@ mat-card-actions {
   line-height: 2em;
   word-spacing: 0.02em;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 850px) {
+  .portfolio-container {
+    margin: 10% 0%;
+  }
 }

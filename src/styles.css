@@ -5,10 +5,6 @@ body {
   background-color: #2a2a2a;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
 }
@@ -38,6 +34,13 @@ h1 {
 
 h2 {
   font-size: 2em;
+  font-weight: 600;
+  line-height: 1.35em;
+  letter-spacing: -0.045em;
+}
+
+h3 {
+  font-size: 1.75em;
   font-weight: 600;
   line-height: 1.35em;
   letter-spacing: -0.045em;
