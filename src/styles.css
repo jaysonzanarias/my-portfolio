@@ -45,3 +45,17 @@ h3 {
   line-height: 1.35em;
   letter-spacing: -0.045em;
 }
+
+.hidden {
+  position: relative;
+  left: -100px;
+  opacity: 0%;
+  animation: appear .8s ease-in-out forwards;
+}
+
+@keyframes appear {
+  100% {
+    opacity: 100%;
+    left: 0px;
+  }
+}

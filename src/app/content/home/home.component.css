@@ -19,7 +19,7 @@
 .intro {
   position: absolute;
   top: 35%;
-  left: 3%;
+  left: 3% !important;
   color: white;
 }
 
