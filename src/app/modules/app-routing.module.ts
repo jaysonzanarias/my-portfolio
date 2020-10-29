@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'vlog', component: VlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'live-projects', component: LiveProjectsComponent },
-  { path: '', component: HomeComponent }
+  { path: '**', redirectTo: '/' },
+  { path: '', component: HomeComponent },
 ];
 
 @NgModule({

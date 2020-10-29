@@ -38,6 +38,10 @@
   height: 200px;
 }
 
+mat-card {
+  outline: none;
+}
+
 mat-card-title,
 mat-card-content,
 mat-card-actions {
