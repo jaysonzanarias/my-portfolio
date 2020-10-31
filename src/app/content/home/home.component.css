@@ -1,9 +1,7 @@
 .home-container {
-
 }
 
 .hero-section {
-
 }
 
 .intro-image {
@@ -32,15 +30,19 @@
 .intro-subtitle {
   font-size: 1.5rem;
   margin-top: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   line-height: 3rem;
+}
+
+.intro-social-media {
 }
 
 a {
   color: inherit;
   text-decoration: none;
   margin-right: 3rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
+  transition: 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 850px) and (min-width: 460px) {
@@ -69,6 +71,10 @@ a {
 }
 
 @media only screen and (max-width: 465px) {
+  .intro {
+    top: 20%;
+  }
+
   .intro-title {
     font-size: 3rem;
     padding: 0 2rem;

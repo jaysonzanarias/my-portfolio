@@ -1,6 +1,8 @@
 .skills-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 10% 0;
+  padding: 0;
 }
 
 .skills-menu {
@@ -138,9 +140,10 @@ td {
   color: #8a8a8a;
   font-family: Lato, Helvetica, Arial, sans-serif;
   word-spacing: 0.02em;
-  font-size: 1.4em;
-  line-height: 2em;
   padding-left: 2rem;
+
+  font-size: 1.2rem;
+  line-height: 1.65em;
 }
 
 li {
@@ -151,7 +154,7 @@ li {
   vertical-align: top;
   width: 45%;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 850px) {

@@ -24,12 +24,7 @@
   cursor: default;
   height: auto;
   width: 100%;
-  /* font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif; */
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  /* font-size: 18px;
-  line-height: 30px; */
-
-  font-size: 1.3em;
+  font-size: 1.2rem;
   line-height: 1.65em;
 }
 

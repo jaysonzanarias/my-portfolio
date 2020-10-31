@@ -1,4 +1,17 @@
 <div class="portfolio-container hide-then-appear">
+    <div class="portfolio-header-content">
+        <h2>My Portfolio</h2>
+        <div>
+            Hi! Below are some of the projects that I've worked on in the past from fully fledged application to
+            some random pet projects, hackathon entry, POC, etc. Most of them I've created alone from ground-up,
+            other examples are by team where I’m working mostly on critical parts. Unfortunately, some of the really
+            cool projects I've done in the past are NDA protected and I cannot fully share them here; nonetheless,
+            thank you for visiting my site and I still hope you enjoy and get a glimpse of what kind of developer or
+            person I am. Will be happy to hear a random feedback from you or if you simply want to connect feel free
+            to visit the Contact page for more details. Thank you!
+        </div>
+    </div>
+
     <div class="projects-container">
         <ng-container *ngFor="let project of projects">
             <mat-card class="action-card project-card" matRipple
@@ -25,81 +38,4 @@
             </mat-card>
         </ng-container>
     </div>
-    <!-- height: depends on the length of text -->
-    <!-- <div class="portfolio-header">
-        <div class="portfolio-header-image">
-            <div class="portfolio-header-content">
-                <div class="portfolio-title">My Portfolio</div>
-                Hi! Below are some of the projects that I've worked on in the past from fully fledged application to
-                some random pet projects, hackathon entry, POC, etc. Most of them I've created alone from ground-up,
-                other examples are by team where I’m working mostly on critical parts. Unfortunately, some of the really
-                cool projects I've done in the past are NDA protected and I cannot fully share them here; nonetheless,
-                thank you for visiting my site and I still hope you enjoy and get a glimpse of what kind of developer or
-                person I am. Will be happy to hear a random feedback from you or if you simply want to connect feel free
-                to visit the Contact page for more details. Thank you!
-            </div>
-        </div>
-    </div> -->
-
-    <!-- height: depends on the dimension of each categories -->
-    <!-- <div class="portfolio-category">
-        <div class="portfolio-category-container">
-            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('All');">
-                <div class="portfolio-category-item-all portfolio-category-item-overlay ">
-                </div>
-                <div class="portfolio-category-item-text">
-                    All
-                </div>
-            </div>
-            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Web');">
-                <div class="portfolio-category-item-web portfolio-category-item-overlay ">
-                </div>
-                <div class="portfolio-category-item-text">
-                    Web
-                </div>
-            </div>
-            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Backend');">
-                <div class="portfolio-category-item-backend portfolio-category-item-overlay ">
-                </div>
-                <div class="portfolio-category-item-text">
-                    Backend
-                </div>
-            </div>
-            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Desktop');">
-                <div class="portfolio-category-item-desktop portfolio-category-item-overlay ">
-                </div>
-                <div class="portfolio-category-item-text">
-                    Desktop
-                </div>
-            </div>
-            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Mobile');">
-                <div class="portfolio-category-item-mobile portfolio-category-item-overlay ">
-                </div>
-                <div class="portfolio-category-item-text">
-                    Mobile
-                </div>
-            </div>
-            <div class="portfolio-category-item" (click)="scroll(portDetailsContainer); setCategory('Game');">
-                <div class="portfolio-category-item-games portfolio-category-item-overlay ">
-                </div>
-                <div class="portfolio-category-item-text">
-                    Games
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div #portDetailsContainer class="portfolio-item-details-container"> -->
-    <!-- <div class="project-title">{{ category }} Projects</div> -->
-    <!-- <div class="project-details">
-            <project-list class="project-list" (onSelect)="setSelected($event)" [(category)]="category"></project-list>
-            <project-container class="project-container" [selectedProject]="selectedProject"></project-container>
-            <div class="project-details-outline">
-                <div *ngIf="selectedProject">
-                    <h2>Technologies Used</h2>
-                    <div class="project-details-outline-technologies">{{selectedProject?.technologies}}</div>
-                </div>
-            </div>
-        </div> -->
-    <!-- </div> -->
 </div>

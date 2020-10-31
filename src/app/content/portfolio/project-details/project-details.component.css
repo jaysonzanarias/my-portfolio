@@ -18,6 +18,8 @@ project-container {
 }
 
 .project-details-outline-technologies {
+  font-size: 1rem;
+  line-height: 1.5em;
   margin-bottom: 3rem;
 }
 
